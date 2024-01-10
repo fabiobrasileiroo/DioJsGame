@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ex {
+            width: 300px;
+            height: 300px;
+            background:
+radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+radial-gradient(circle at 50% 41%, #fefffd 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
+radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+background-color:#ffffff;
+background-size:100px 100px;
+        }
+        .repeat {
+            width: 300px;
+            height: 300px;
+            background-image: 
+            url('../img/gingerbread-162141_960_720.png'),
+            url('../img/snow-8481377_960_720.png');
+            background-size: 40px, 300px;
+            border: 1px solid red;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: auto;
+        }
+       /* 
+        ::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #000000;
+    
+}
+::-webkit-scrollbar-arow {
+    color: black;
+}
+::-webkit-scrollbar-thumb {
+    background: #848484;
+}
+*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
+
+  #container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="ex"></div>    
+    <div class="repeat">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorum qui illo repudiandae consectetur commodi! Libero vero ducimus quisquam aliquid aperiam nostrum nihil corrupti, mollitia nam laborum enim nulla architecto.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio tempore nulla voluptatibus, debitis quod quia ut suscipit qui possimus ad esse beatae voluptates, voluptas dolore odit? Similique, facilis cumque!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quidem error, fugit dolorem illo, quibusdam blanditiis hic magnam aspernatur omnis maxime iste quas ducimus mollitia? Cumque reiciendis sed id officiis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum nihil facilis rerum quos ducimus impedit molestias! Voluptate rerum ullam, laudantium a voluptatibus expedita qui, animi ab, iure in dolores!
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
+
+<script>
+  const container = document.querySelector('body');
+  container.style.backgroundColor= 'black'
+  const ps = new PerfectScrollbar(container, {
+    // Define the scrollbar width
+    width: 10,
+
+    // Define the scrollbar height
+    height: 10,
+
+    // Define the scrollbar background color
+    background: '#000',
+
+    // Define the scrollbar thumb color
+    color: '#FFF',
+
+    // Define the scrollbar thumb border color
+    border: '#000',
+  });
+</script>
+<div id="container">
+  ...
+</div>
+
+</body>
+</html>
