@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('../css/reset.css');
+        
+        @font-face {
+            font-family: Roboto;
+            src: url(../assets/Roboto/Roboto-Regular.ttf);
+            font-weight: lighter ;
+            font-style: oblique;
+        }
+        h1 {
+            font-family: Roboto;
+            font-weight: normal;
+        }
+        article {
+            background-color: aliceblue;
+            border: 1px solid lightblue;
+            padding: 10px;
+            width: 500px;
+        }
+        p {
+            font-family: Roboto;
+            text-transform: capitalize;
+            text-align: justify;
+        }
+        p + p {
+            text-decoration: underline wavy red ;
+            text-decoration-thickness:0.1px ;
+        }
+        p+p+p {
+            text-decoration: none;
+            text-indent: 30px;
+        }
+        p + p + p + p {
+            letter-spacing: 2px;
+            word-spacing: 2px;
+        }
+        p + p + p + p {
+            white-space: pre-wrap;
+            background-color: antiquewhite;
+        }
+        article span {
+            display: block;
+            width: 50px;
+            word-wrap: break-word;
+            background-color: aqua;
+        }
+        main > p {
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+        main > p + p {
+            text-overflow: 'nao pega no chrome';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Testando fontes</h1>
+    <article>
+        <p>LOREM ipsum
+             dolor sit amet consectetur adipisicing elit. Tempore facere ea pariatur expedita amet fugit autem, impedit, quos et perferendis, cum incidunt. Ullam delectus quas, aliquam deserunt itaque fugiat aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolores dicta quasi voluptatum dolorum inventore nulla repellat consequuntur sed expedita, ipsum accusamus reiciendis officia animi quos nam aspernatur vero corporis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maiores velit cumque sint quasi, officia provident sequi odit non fugit blanditiis tenetur ea corporis minima iste, fuga repudiandae debitis consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque perferendis, odit totam laudantium corrupti, dicta esse alias quam temporibus, fugiat eum voluptate exercitationem neque quae magni. Expedita, assumenda aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis vel voluptates vitae quidem nostrum unde consequatur numquam. Impedit quos recusandae, nisi eaque velit unde veniam non accusamus cum iste iusto!</p>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nobis dolores aut mollitia dolorem ex enim reiciendis voluptatem quia! Alias, autem? Dolorem sed quos in ut numquam assumenda temporibus sapiente.
+        </span>
+    </article>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit, tempora repudiandae esse laboriosam error molestiae est dicta qui asperiores provident ipsum rem illo nobis fugiat? Voluptatum et unde reiciendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet enim ullam qui excepturi porro nisi odio sed magnam nesciunt, cumque eligendi consequatur possimus quibusdam quia numquam ex distinctio facilis commodi!</p>
+    </main>
+</body>
+</html>

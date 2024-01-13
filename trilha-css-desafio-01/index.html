@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Trilha de CSS - DIO</title>
+  <style>
+    @import url('reset.css');
+    body {
+      background-color: black;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #33A8DB;
+      font-weight: bold;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    p {
+      color: white;
+    }
+
+    section {
+      margin: 100px auto;
+    }
+
+    .banner {
+      background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('assets/images/banner.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
+      padding-top: 60px;
+      border-bottom: 1px solid #33A8DB80;
+    }
+    .banner .banner-content {
+      color: white;
+      width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: transparent;
+      background: -webkit-linear-gradient(#33A8DB80, #1472B7);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .banner .logo {
+      background-color: rgba(0, 0, 0, .2);
+      height: 260px;
+      width: 260px;
+      margin: auto;
+      margin-bottom: auto;
+      border-radius: 50%;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .banner-content p {
+      font-weight: 500;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .banner-content button {
+      font-family: Raleway, sans-serif;
+      width: 326px;
+      height: 57px;
+      margin-top: 16px;
+      border: 2px solid #33A8DB;
+      font-size: large;
+      font-weight: bold;
+      font-weight: 700;
+      color: #33A8DB;
+      letter-spacing: 4px;
+      background-color: transparent;
+      border-radius: 10px;
+    }
+    .banner-content button:hover {
+      background-color: #33A8DB ;
+      color: rgba(255, 255, 255, 1);
+    }
+    #course-content {
+      width: 792px;
+      height: 325px;
+      text-align: center;
+    }
+    .modules-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      flex-direction: column;
+      color: #fff;
+    }
+    .module {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:row;
+      background-color: #252525;
+      width: 535px;
+      height: 51px;
+      border: 1px solid #33A8DB;
+      border-radius: 57px;
+      margin: 8px;
+      font-weight: 600;
+    }
+    .module >span {
+      color: #33A8DB;
+    }
+    #transform-world {
+      height: 363px;
+      background-image: url(./assets/images/woman-code.png) ;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      border-top: 1px  solid #1472B7;
+      border-bottom: 1px  solid #1472B7;
+    }
+    #transform-world p{
+      position: absolute;
+      width: 244px;
+      height: 141px;
+      top: 111px;
+      left: 198px;
+      font-family: Raleway, sans-serif;
+      font-weight: 900;
+      font-size: 2.5rem;
+      line-height: 46.96px;
+      text-transform: lowercase;
+      filter: drop-shadow(3px 2px 0px #33A8DB);
+    }
+    #professional-challenges {
+      width:746px;
+    }
+    footer {
+      width: 100%;
+      height: 200px;
+      padding: 60px 0;
+      text-align: center;
+      background: linear-gradient(rgba(50, 168, 219, .0) ,rgba(5, 168, 219, .2));
+      border-top: 1px solid #33A8DB80;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="banner">
+    <div class="banner-content">
+      <article>
+        <div class="logo">
+          <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO" />
+        </div>
+        <h1>Trilha de CSS da DIO</h1>
+        <p>
+          A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do
+          zero como desenvolver sites profissionais.
+        </p>
+        <button>Quero me inscrever</button>
+    </div>
+  </header>
+  </article>
+  <main>
+    <section id="course-content">
+      <h2>O que vou aprender?</h2>
+      <p>
+        Temos 3 módulos recheados de conteúdos do básico ao avançado para que
+        você aprenda a desenvolver sites profissionais utilizando somente HTML
+        e CSS: sem nenhuma biblioteca ou framework a mais.
+      </p>
+      <div class="modules-list">
+        <div class="module">
+          <span>Módulo 01:</span> primeiros passos com CSS
+        </div>
+        <div class="module">
+          <span>Módulo 02:</span> trabalhando com layouts no CSS
+        </div>
+        <div class="module">
+          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+        </div>
+      </div>
+    </section>
+    <section id="transform-world">
+      <p>TRANSFORME O MUNDO COM A GENTE</p>
+    </section>
+    <section id="professional-challenges">
+      <h2>Evolua e encare novos desafios profissionais</h2>
+      <img style="margin-top: 10px; margin-bottom: 20px;" src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet"
+        alt="Homem lendo depoimentos em um tablet" />
+      <p>
+        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos
+        os dias dezenas de empresas acessam a nossa plataforma em busca dos
+        talentos mais criativos, dinâmicos e colaborativos, além do
+        conhecimento técnico. A nossa missão é te preparar para que você
+        conecte-se com as melhores oportunidades.
+      </p>
+    </section>
+  </main>
+  <footer >
+    <img  class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change"
+      alt="Logotipo DIO com o texto make the change" />
+    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+  </footer>
+</body>
+</html>

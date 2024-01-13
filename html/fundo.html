@@ -6,19 +6,20 @@
     <title>Document</title>
     <style>
         .ex {
-            width: 300px;
+            width: 500px;
             height: 300px;
-            background:
-radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
-radial-gradient(circle at 50% 41%, #fefffd 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
-radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
-radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
-radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
-radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
-radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
-radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
-background-color:#ffffff;
-background-size:100px 100px;
+            border: 15px dashed palegreen;
+            background-color: #c2b97b;
+background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+background-size: 60px 60px;
+background-position: 0 0, 30px 30px;
+padding: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3rem;
+            color: lightblue;
+            font-weight: 900;
+            background-image: url('../img/snow-8481377_960_720.png');
         }
         .repeat {
             width: 300px;
@@ -31,6 +32,7 @@ background-size:100px 100px;
             background-repeat: no-repeat;
             background-attachment: fixed;
             overflow: auto;
+
         }
        /* 
         ::-webkit-scrollbar-track {
@@ -68,6 +70,8 @@ background-size:100px 100px;
   border-radius: 20px;
   border: 3px solid orange;
 }
+h1 {
+}
 
   #container {
       position: relative;
@@ -78,7 +82,7 @@ background-size:100px 100px;
 
 </head>
 <body>
-    <div class="ex"></div>    
+    <div class="ex"><h1>BAMZER</h1></div>    
     <div class="repeat">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorum qui illo repudiandae consectetur commodi! Libero vero ducimus quisquam aliquid aperiam nostrum nihil corrupti, mollitia nam laborum enim nulla architecto.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio tempore nulla voluptatibus, debitis quod quia ut suscipit qui possimus ad esse beatae voluptates, voluptas dolore odit? Similique, facilis cumque!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quidem error, fugit dolorem illo, quibusdam blanditiis hic magnam aspernatur omnis maxime iste quas ducimus mollitia? Cumque reiciendis sed id officiis.
@@ -87,8 +91,6 @@ background-size:100px 100px;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
 
 <script>
-  const container = document.querySelector('body');
-  container.style.backgroundColor= 'black'
   const ps = new PerfectScrollbar(container, {
     // Define the scrollbar width
     width: 10,
