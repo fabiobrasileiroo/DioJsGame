@@ -46,3 +46,21 @@
 .menu-score h2:nth-child(2) {
   margin-top: 1rem;
 }
+footer {
+  margin: auto;
+}
+footer a {
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid rgb(10, 147, 147);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 900; 
+  box-shadow: inset 10px 10px 10px 10px rgba(0, 0, 0, 0.303),
+  inset -6px -20px 10px 10px rgba(0, 0, 0, 0.367);
+}
+footer a:hover {
+  background-color:  rgb(10, 147, 147);
+}
