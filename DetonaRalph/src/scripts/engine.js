@@ -12,7 +12,7 @@ const state = {
     currentTime: 60,
   },
   actions: {
-    timeId:setInterval(randomSquare, 1000),
+    timeId:setInterval(randomSquare, 750),
     //null,
     countDowmTimeId:setInterval(countDowm, 1000),
   }
@@ -23,8 +23,15 @@ function countDowm() {
   state.view.timeLeft.textContent = state.values.currentTime
 
   if(state.values.currentTime <= 0) {
+    clearInterval(state.actions.countDowmTimeId)
+    clearInterval(state.actions.timeId)
     alert("Game Over! O seu resultado foi: " + state.values.result)
   }
+}
+function playSound(audioName) {
+  let audio = new Audio(`/src/audios/${audioName}.m4a`)
+  audio.volume = 0.2
+  audio.play()
 }
 
 function randomSquare() {
@@ -48,6 +55,7 @@ function addListenerHitBox() {
         state.values.result++
         state.view.score.textContent = state.values.result
         state.values.hitPosition = null
+        playSound("hit")
       }
     })
   })
